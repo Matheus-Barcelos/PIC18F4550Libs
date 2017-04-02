@@ -53,7 +53,7 @@
 //analog-digital conversion
 
 #define AD_CHAN(n) AD_CHAN##n
-#define AD_SET_CHAN(n) ADCON0 |= AD_CHAN_##n_HI_MASK; ADCON0 &= AD_CHAN_##n_LO_MASK;
+#define AD_SET_CHAN(n) (ADCON0 |= AD_CHAN_##n_HI_MASK; ADCON0 &= AD_CHAN_##n_LO_MASK;)
 
 #define AD_CHAN0 0
 #define AD_CHAN_0_HI_MASK 0b00000000

@@ -5,6 +5,7 @@
 
 
 void initAD();
+void initAD(int channel);
 unsigned short getADResult();
 
 

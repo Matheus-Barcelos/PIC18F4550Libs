@@ -11,6 +11,20 @@ void initAD()
     GODONE=1;
 }
 
+void initAD(int channel)
+{
+    if(channel<15)
+    {
+        ADCON1 = 0b00001110;
+        ADCON2 = 0b10101010;
+
+        ADCON0 = channel<<2;
+
+        ADON=1;
+        GODONE=1;
+    }
+}
+
 unsigned short getADResult()
 {
     ADIF=0;

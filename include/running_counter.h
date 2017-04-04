@@ -5,7 +5,7 @@ typedef struct RUNNINGCOUNTER
 {
     uint16 count;
     uint16 period;
-    uint16 flipPoint;
+    uint16 callbackPoint;
     void callback(RunningCounter*);
 }RunningCounter;
 

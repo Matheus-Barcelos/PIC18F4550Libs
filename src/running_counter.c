@@ -8,7 +8,7 @@ void initRunningCounter(RunningCounter* counter)
 void serviceRunningCounter(RunningCounter* counter)
 {
     counter->count++;
-    if(counter->count > counter->flipPoint)
+    if(counter->count > counter->callbackPoint)
     {
         counter->callback(counter);
     }

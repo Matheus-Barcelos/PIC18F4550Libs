@@ -1,6 +1,8 @@
 #ifndef RUNNING_COUNTER_H
 #define RUNNING_COUNTER_H
 
+#include "common_structs.h"
+
 typedef struct RUNNINGCOUNTER
 {
     uint16 count;

@@ -1,6 +1,6 @@
 #include "analog_digital.h"
 
-void initAD()
+void initADChannel0()
 {
     ADCON1 = 0b00001110;
     ADCON2 = 0b10101010;
@@ -11,7 +11,7 @@ void initAD()
     GODONE=1;
 }
 
-void initADDinamic(int channel)
+void initAD(int channel)
 {
     if(channel<15)
     {

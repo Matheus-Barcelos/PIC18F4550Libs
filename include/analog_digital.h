@@ -4,8 +4,8 @@
 #include "hal.h"
 
 
-void initAD();
-void initADDinamic(int channel);
+void initADChannel0();
+void initAD(int channel);
 unsigned short getADResult();
 
 

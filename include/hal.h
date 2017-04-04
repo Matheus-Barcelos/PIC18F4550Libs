@@ -57,19 +57,22 @@
 #define AD_CHAN_LO_MASK(n) AD_CHAN_LO_MASK_##n
 #define AD_SET_CHAN(n) ADCON0|=AD_CHAN_HI_MASK(n);ADCON0&=AD_CHAN_LO_MASK(n)
 
-
+//analog-digital channel 0
 #define AD_CHAN0 0
 #define AD_CHAN_HI_MASK_0 0b00000000
 #define AD_CHAN_LO_MASK_0 0b11000011
 
+//analog-digital channel 1
 #define AD_CHAN1 1
 #define AD_CHAN_1_HI_MASK 0b00000100
 #define AD_CHAN_1_LO_MASK 0b11000111
 
+//analog-digital channel 2
 #define AD_CHAN2 2
 #define AD_CHAN_2_HI_MASK 0b00001000
 #define AD_CHAN_2_LO_MASK 0b11001011
 
+//analog-digital channel 3
 #define AD_CHAN3 3
 #define AD_CHAN_3_HI_MASK 0b00001100
 #define AD_CHAN_3_LO_MASK 0b11001111

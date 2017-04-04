@@ -1,4 +1,4 @@
-#include "counter.h"
+#include "../include/counter.h"
 
 void initCounter(register Counter* counter)
 {

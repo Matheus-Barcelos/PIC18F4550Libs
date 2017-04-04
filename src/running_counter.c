@@ -1,4 +1,4 @@
-#include "running_counter.h"
+#include "../include/running_counter.h"
 
 void initRunningCounter(RunningCounter* counter)
 {

@@ -8,8 +8,8 @@ typedef struct RUNNINGCOUNTER
     uint16 count;
     uint16 period;
     uint16 callbackPoint;
-    void callback(RunningCounter*);
-    void callbackExpired(RunningCounter*);
+    void (*callback)(struct RUNNINGCOUNTER*);
+    void (*callbackExpired)(struct RUNNINGCOUNTER*);
 }RunningCounter;
 
 void initRunningCounter(RunningCounter* counter);

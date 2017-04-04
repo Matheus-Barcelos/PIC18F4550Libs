@@ -15,5 +15,6 @@ void serviceRunningCounter(RunningCounter* counter)
     else if(counter->count > counter->period)
     {
         counter->count = 0;
+        counter->callbackExpired(counter);
     }
 }

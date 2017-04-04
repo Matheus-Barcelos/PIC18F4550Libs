@@ -9,6 +9,7 @@ typedef struct RUNNINGCOUNTER
     uint16 period;
     uint16 callbackPoint;
     void callback(RunningCounter*);
+    void callbackExpired(RunningCounter*);
 }RunningCounter;
 
 void initRunningCounter(RunningCounter* counter);
